@@ -8,7 +8,7 @@ import {
 	View,
 } from "react-native";
 import React, { useContext, useEffect, useRef, useState } from "react";
-import { Avatar, IconButton, TextInput } from "react-native-paper";
+import { IconButton, TextInput } from "react-native-paper";
 import { Sizes } from "../../../utils/theme";
 import { AuthContext } from "../../../context/AuthContext";
 import {
@@ -16,7 +16,6 @@ import {
 	doc,
 	getDoc,
 	onSnapshot,
-	serverTimestamp,
 	setDoc,
 	updateDoc,
 } from "firebase/firestore";

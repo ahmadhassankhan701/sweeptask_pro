@@ -10,9 +10,7 @@ import {
 import React, { useContext, useEffect, useState } from "react";
 import { Sizes } from "../../utils/theme";
 import Footer from "../../components/Footer";
-import { IconButton } from "react-native-paper";
 import {
-	and,
 	arrayUnion,
 	collection,
 	deleteDoc,
@@ -20,7 +18,6 @@ import {
 	doc,
 	getDoc,
 	onSnapshot,
-	or,
 	orderBy,
 	query,
 	updateDoc,
@@ -274,32 +271,36 @@ const Bookings = ({ navigation }) => {
 			const userWalletSnap = await getDoc(userWalletRef);
 			const userWalletData = userWalletSnap.data().wallet;
 			let wallet;
-			const proEarning = discountedAmount - commission;
+			const proEarning = parseInt(discountedAmount) - parseInt(commission);
 			if (payChoice === "cash") {
 				if (userWalletData) {
 					await updateDoc(userWalletRef, {
-						"wallet.totalEarned": userWalletData.totalEarned + proEarning,
-						"wallet.gotPaid": userWalletData.gotPaid + proEarning,
-						"wallet.payToApp": userWalletData.payToApp + commission,
+						"wallet.totalEarned":
+							parseInt(userWalletData.totalEarned) + parseInt(proEarning),
+						"wallet.gotPaid":
+							parseInt(userWalletData.gotPaid) + parseInt(proEarning),
+						"wallet.payToApp":
+							parseInt(userWalletData.payToApp) + parseInt(commission),
 					});
 				} else {
 					wallet = {
-						totalEarned: proEarning,
+						totalEarned: parseInt(proEarning),
 						totalPenalty: 0,
 						penaltyPaid: 0,
-						gotPaid: proEarning,
-						payToApp: commission,
+						gotPaid: parseInt(proEarning),
+						payToApp: parseInt(commission),
 					};
 					await updateDoc(userWalletRef, { wallet });
 				}
 			} else {
 				if (userWalletData) {
 					await updateDoc(userWalletRef, {
-						"wallet.totalEarned": userWalletData.totalEarned + proEarning,
+						"wallet.totalEarned":
+							parseInt(userWalletData.totalEarned) + parseInt(proEarning),
 					});
 				} else {
 					wallet = {
-						totalEarned: proEarning,
+						totalEarned: parseInt(proEarning),
 						totalPenalty: 0,
 						penaltyPaid: 0,
 						gotPaid: 0,
@@ -340,15 +341,16 @@ const Bookings = ({ navigation }) => {
 			const userWalletSnap = await getDoc(userWalletRef);
 			const userWalletData = userWalletSnap.data().wallet;
 			let wallet;
-			const penalty = discountedAmount * 0.1;
+			const penalty = parseInt(discountedAmount) * 0.1;
 			if (userWalletData) {
 				await updateDoc(userWalletRef, {
-					"wallet.totalPenalty": userWalletData.totalPenalty + penalty,
+					"wallet.totalPenalty":
+						parseInt(userWalletData.totalPenalty) + parseInt(penalty),
 				});
 			} else {
 				wallet = {
 					totalEarned: 0,
-					totalPenalty: penalty,
+					totalPenalty: parseInt(penalty),
 					penaltyPaid: 0,
 					gotPaid: 0,
 					payToApp: 0,

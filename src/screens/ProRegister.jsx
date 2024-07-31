@@ -17,16 +17,7 @@ import { Sizes } from "../utils/theme";
 import * as DocumentPicker from "expo-document-picker";
 import { nanoid } from "nanoid/non-secure";
 import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
-import {
-	addDoc,
-	collection,
-	doc,
-	getDocs,
-	query,
-	serverTimestamp,
-	setDoc,
-	where,
-} from "firebase/firestore";
+import { addDoc, collection } from "firebase/firestore";
 
 const ProRegister = ({ navigation }) => {
 	const [details, setDetails] = useState({

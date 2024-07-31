@@ -3,6 +3,7 @@ import React from "react";
 import { Sizes } from "../../utils/theme";
 import Footer from "../../components/Footer";
 import { Avatar, IconButton, List } from "react-native-paper";
+
 const Inbox = ({ navigation }) => {
 	return (
 		<View style={styles.container}>

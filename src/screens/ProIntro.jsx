@@ -13,7 +13,7 @@ const ProIntro = ({ navigation }) => {
 			<Image
 				source={require("../assets/GreenLogo.png")}
 				alt="logo"
-				style={{ width: 225, height: 44, marginBottom: 50 }}
+				style={{ width: 225, height: 42, marginBottom: 50 }}
 			/>
 			<View style={{ marginTop: 50 }}>
 				<TouchableOpacity onPress={() => navigation.navigate("ProLogin")}>

@@ -13,11 +13,7 @@ import { Button } from "react-native-paper";
 import InputText from "../components/Input/InputText";
 import { collection, doc, getDocs, query, where } from "firebase/firestore";
 import { auth, db } from "../../firebase";
-import {
-	sendEmailVerification,
-	signInWithEmailAndPassword,
-	signOut,
-} from "firebase/auth";
+import { signInWithEmailAndPassword, signOut } from "firebase/auth";
 import { activateNotify } from "../utils/Helpers/NotifyConfig";
 import { AuthContext } from "../context/AuthContext";
 import AsyncStorage from "@react-native-async-storage/async-storage";

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "510800792581",
+    "project_id": "clean-task-43018",
+    "storage_bucket": "clean-task-43018.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:510800792581:android:b21e06fb9f8ab74978606c",
+        "android_client_info": {
+          "package_name": "com.sweeptask.android"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuhcTZpC9FncCS_OTxoJnWKmquGw9CSaI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:510800792581:android:b682cb1e40e3935f78606c",
+        "android_client_info": {
+          "package_name": "com.sweeptask.cleaner"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuhcTZpC9FncCS_OTxoJnWKmquGw9CSaI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

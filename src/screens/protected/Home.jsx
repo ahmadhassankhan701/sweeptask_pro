@@ -13,7 +13,6 @@ import {
 	collection,
 	doc,
 	getCountFromServer,
-	getDoc,
 	onSnapshot,
 	query,
 	updateDoc,
@@ -24,7 +23,6 @@ import { AuthContext } from "../../context/AuthContext";
 import * as Location from "expo-location";
 import { ScrollView } from "react-native";
 import { Image } from "react-native";
-import { sendNotification } from "../../utils/Helpers/NotifyConfig";
 
 const Home = ({ navigation }) => {
 	const { state } = useContext(AuthContext);

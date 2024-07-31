@@ -1,4 +1,4 @@
-import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { Text, TouchableOpacity, View } from "react-native";
 import React from "react";
 import { IconButton, Modal, Portal } from "react-native-paper";
 const DocTypes = ({ visible, setVisible, titles, handleAction }) => {
@@ -57,5 +57,3 @@ const DocTypes = ({ visible, setVisible, titles, handleAction }) => {
 };
 
 export default DocTypes;
-
-const styles = StyleSheet.create({});

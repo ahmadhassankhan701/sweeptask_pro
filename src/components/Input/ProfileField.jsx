@@ -1,4 +1,3 @@
-import { StyleSheet } from "react-native";
 import React from "react";
 import { TextInput } from "react-native-paper";
 
@@ -18,5 +17,3 @@ const ProfileField = ({ title, name, val, handleChange }) => {
 };
 
 export default ProfileField;
-
-const styles = StyleSheet.create();

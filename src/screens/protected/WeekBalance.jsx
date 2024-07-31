@@ -1,12 +1,6 @@
-import {
-	StyleSheet,
-	Text,
-	View,
-	TouchableOpacity,
-} from "react-native";
+import { StyleSheet, Text, View, TouchableOpacity } from "react-native";
 import React from "react";
-import { LineChart } from "react-native-chart-kit";
-import { Button, Divider } from "react-native-paper";
+import { Button } from "react-native-paper";
 import { Sizes } from "../../utils/theme";
 
 const WeekBalance = ({ navigation }) => {
@@ -27,12 +21,8 @@ const WeekBalance = ({ navigation }) => {
 					<Text>Current Week</Text>
 				</View>
 				<View style={styles.topCover}>
-					<Text style={{ fontSize: 15, marginBottom: 10 }}>
-						Your Balance
-					</Text>
-					<Text style={{ fontSize: 20, marginBottom: 10 }}>
-						R0.00
-					</Text>
+					<Text style={{ fontSize: 15, marginBottom: 10 }}>Your Balance</Text>
+					<Text style={{ fontSize: 20, marginBottom: 10 }}>R0.00</Text>
 					<Text style={{ fontSize: 15, marginBottom: 10 }}>
 						Next Weekly Payout: 25 April
 					</Text>
@@ -97,9 +87,7 @@ const WeekBalance = ({ navigation }) => {
 			</View>
 			<View style={styles.bottomBar}>
 				<View style={styles.bar}>
-					<TouchableOpacity
-						onPress={() => navigation.navigate("WeekData")}
-					>
+					<TouchableOpacity onPress={() => navigation.navigate("WeekData")}>
 						<Text style={styles.footerElem}>Earnings</Text>
 					</TouchableOpacity>
 					<Text
