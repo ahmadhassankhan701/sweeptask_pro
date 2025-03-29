@@ -1,52 +1,52 @@
 {
-	"expo": {
-		"name": "Sweeptask Cleaner",
-		"slug": "sweeptask-cleaner",
-		"version": "1.0.3",
-		"orientation": "portrait",
-		"icon": "./assets/icon.png",
-		"userInterfaceStyle": "light",
-		"splash": {
-			"image": "./assets/splash.png",
-			"resizeMode": "contain",
-			"backgroundColor": "#ffffff"
-		},
-		"notification": {
-			"icon": "./assets/icon.png"
-		},
-		"assetBundlePatterns": ["**/*"],
-		"ios": {
-			"supportsTablet": true,
-			"bundleIdentifier": "com.sweeptask.cleaner"
-		},
-		"android": {
-			"config": {
-				"googleMaps": {
-					"apiKey": "AIzaSyC0s7tq52XRV37QIon2GNNp1KoD07cSugI"
-				}
-			},
-			"googleServicesFile": "./google-services.json",
-			"adaptiveIcon": {
-				"foregroundImage": "./assets/adaptive_icon.png",
-				"backgroundColor": "#ffffff"
-			},
-			"package": "com.sweeptask.cleaner",
-			"versionCode": 3
-		},
-		"web": {
-			"favicon": "./assets/icon.png"
-		},
-		"extra": {
-			"eas": {
-				"projectId": "a3ac93c5-b385-47fd-9748-f3e50586d2c4"
-			}
-		},
-		"runtimeVersion": {
-			"policy": "appVersion"
-		},
-		"updates": {
-			"url": "https://u.expo.dev/40c86a2b-4574-44e4-8cd0-bd51ff28ff4d"
-		},
-		"owner": "ahmadlohani"
-	}
+  "expo": {
+    "name": "Sweeptask Cleaner",
+    "slug": "sweeptask-cleaner",
+    "version": "1.0.3",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "notification": {
+      "icon": "./assets/icon.png"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.sweeptask.cleaner"
+    },
+    "android": {
+      "config": {
+        "googleMaps": {
+          "apiKey": ""
+        }
+      },
+      "googleServicesFile": "./google-services.json",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive_icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.sweeptask.cleaner",
+      "versionCode": 3
+    },
+    "web": {
+      "favicon": "./assets/icon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "a3ac93c5-b385-47fd-9748-f3e50586d2c4"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/40c86a2b-4574-44e4-8cd0-bd51ff28ff4d"
+    },
+    "owner": "ahmadlohani"
+  }
 }
