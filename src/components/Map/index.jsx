@@ -148,7 +148,7 @@ const index = ({ location, handleChange }) => {
 						}
 					}}
 					query={{
-						key: "AIzaSyC0s7tq52XRV37QIon2GNNp1KoD07cSugI",
+						key: "",
 						language: "en",
 						types: "establishment",
 						radius: 8000,
